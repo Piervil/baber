@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: #000000;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  padding: 1rem 4rem;
+  background: #191C24;
+}
+.header .logo {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #eb1616;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.header .navbar .navbar__menu {
+  display: flex;
+  gap: 4rem;
+}
+.header .navbar__menu a {
+  color: #6C7293;
+  font-size: 1.9rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.header .navbar__menu a:hover {
+  color: #eb1616;
+}
+.header .navbar__menu li:first-child a {
+  color: #eb1616;
+}
+.header .navbar__quote {
+  color: #ffffff;
+  background: #eb1616;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.header .navbar__quote:hover {
+  background-color: rgb(181, 9, 0);
+}
+.header .navbar__quote .fa-solid {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.hero {
+  background-image: linear-gradient(29deg, rgba(0, 0, 0, 0.658) 25%, rgba(62, 13, 20, 0.658) 100%), url(../assets/carousel.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  color: #ffffff;
+}
+.hero .hero__flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15rem;
+}
+.hero .hero__flex h1 {
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 1rem;
+}
+.hero .hero__flex p {
+  font-size: 2rem;
+}
+
+.about {
+  padding: 5rem 0;
+}
+.about .about__flex {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.about .about__flex img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+  margin-left: 9rem;
+  display: block;
+}
+
+.about__text .btn {
+  background-color: #191C24;
+  padding: 0.5rem 2rem;
+  color: #eb1616;
+  font-family: "Oswald", sans-serif;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.about__text h2 {
+  font-size: 4.9rem;
+  font-family: "Oswald", sans-serif;
+  line-height: 5.3rem;
+  padding-bottom: 1rem;
+}
+.about__text p {
+  padding-bottom: 1.6rem;
+  width: 75%;
+  color: #6C7293;
+}
+.about__text .about__info {
+  display: flex;
+}
+.about__text .about__title {
+  font-size: 3rem;
+}
+
+.service {
+  text-align: center;
+  padding: 6rem 0 0 0;
+}
+.service span {
+  background-color: #191C24;
+  padding: 0.5rem 2rem;
+  color: #eb1616;
+  font-family: "Oswald", sans-serif;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.service h2 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.service .service__flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.service .service__info {
+  width: 30rem;
+  height: 23rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191C24;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+.service .service__info:hover {
+  transform: translateY(-10px);
+}
+.service .service__info img {
+  padding-bottom: 1rem;
+}
+.service .service__info h3 {
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 1rem;
+}
+.service .service__info p {
+  color: #6C7293;
+  padding-bottom: 1rem;
+}
+
+.price {
+  padding: 6rem 0;
+}
+.price .price__flex {
+  display: flex;
+}
+
+.price__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #191C24;
+  border-radius: 0.2rem;
+  width: 50rem;
+  padding: 3rem;
+}
+.price__info p {
+  width: 40%;
+  background-color: #000000;
+  padding: 0.5rem 2rem;
+  color: #eb1616;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin: 6rem 0 2rem 0;
+  display: inline-block;
+}
+.price__info h3 {
+  font-size: 4rem;
+  width: 95%;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 2rem;
+}
+.price__info .price__check {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #6C7293;
+}
+.price__info .price__check h4 {
+  font-family: "Oswald", sans-serif;
+}
+.price__info .price__check span {
+  color: #eb1616;
+}
+
+.time__flex {
+  display: flex;
+}
+
+.time__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #191C24;
+  border-radius: 0.2rem;
+  width: 50rem;
+  padding: 3rem;
+}
+.time__info p {
+  width: 40%;
+  background-color: #000000;
+  padding: 0.5rem 2rem;
+  color: #eb1616;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin: 6rem 0 2rem 0;
+  display: inline-block;
+}
+.time__info h3 {
+  font-size: 4rem;
+  width: 95%;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 2rem;
+}
+.time__info .time__check {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #6C7293;
+}
+.time__info .time__check h4 {
+  font-family: "Oswald", sans-serif;
+}
+.time__info .time__check span {
+  color: #eb1616;
+}
+
+.testimonial {
+  padding: 6rem 0;
+  text-align: center;
+}
+.testimonial span {
+  background-color: #191C24;
+  padding: 0.5rem 2rem;
+  color: #eb1616;
+  font-family: "Oswald", sans-serif;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.testimonial h3 {
+  font-size: 4rem;
+  font-family: "Oswald", sans-serif;
+}
+.testimonial .testimonial__flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial .testimonial__flex .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.testimonial h4 {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 2rem;
+}
+.testimonial p {
+  color: #6C7293;
+  line-height: 2.2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.testimonial img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #6C7293;
+}
+footer p {
+  text-align: center;
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

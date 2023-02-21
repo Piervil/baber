@@ -1,0 +1,328 @@
+@use 'base';
+
+// HEADER
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  padding: 1rem 4rem;
+  background: base.$nav-color;
+  .logo {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-family: base.$title;
+    color: base.$color-red;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    .navbar__menu {
+      display: flex;
+      gap: 4rem;
+    }
+  }
+  .navbar__menu a {
+    color: base.$color-gray;
+    font-size: 1.9rem;
+    font-family: base.$title;
+    text-transform: uppercase;
+    &:hover {
+      color: base.$color-red;
+    }
+  }
+  .navbar__menu li:first-child a {
+    color: base.$color-red;
+  }
+  .navbar__quote {
+    color: base.$color-white;
+    background: base.$color-red;
+    padding: 1rem;
+    border-radius: .4rem;
+    &:hover {
+      background-color: rgb(181, 9, 0);
+    }
+  .fa-solid {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
+}
+}
+
+// HERO
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.hero {
+  background-image: linear-gradient(29deg, rgba(0, 0, 0, 0.658) 25%, rgba(62, 13, 20, 0.658) 100%), url(../assets/carousel.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  color: base.$color-white;
+  .hero__flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15rem;
+    h1 {
+      font-size: 5rem;
+      font-family: base.$title;
+      padding-bottom: 1rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+// ABOUT
+.about {
+  padding: 5rem 0;
+  .about__flex {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    img {
+      width: 40rem;
+      height: 40rem;
+      object-fit: cover;
+      margin-left: 9rem;
+      display: block;
+    }
+  }
+}
+.about__text {
+  .btn {
+    background-color: base.$nav-color;
+    padding: .5rem 2rem;
+    color: base.$color-red;
+    font-family: base.$title;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  h2 {
+    font-size: 4.9rem;
+    font-family: base.$title;
+    line-height: 5.3rem;
+    padding-bottom: 1rem;
+  }
+  p {
+    padding-bottom: 1.6rem;
+    width: 75%;
+    color: base.$color-gray;
+  }
+  .about__info {
+    display: flex;
+  }
+  .about__title {
+    font-size: 3rem;
+  }
+}
+
+// SERVICE
+.service {
+  text-align: center;
+  padding: 6rem 0 0 0;
+  span {
+    background-color: base.$nav-color;
+    padding: .5rem 2rem;
+    color: base.$color-red;
+    font-family: base.$title;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  h2 {
+    text-align: center;
+    font-family: base.$title;
+  }
+  .service__flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  .service__info {
+    width: 30rem;
+    height: 23rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: base.$nav-color;
+    padding: 2rem;
+    border-radius: .4rem;
+    &:hover {
+      transform: translateY(-10px);
+    }
+    img {
+      padding-bottom: 1rem;
+    }
+    h3 {
+      font-family: base.$title;
+      padding-bottom: 1rem;
+    }
+    p {
+      color: base.$color-gray;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+// PRICE 
+.price {
+  padding: 6rem 0;
+  .price__flex {
+    display: flex;
+  }
+}
+.price__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: base.$nav-color;
+  border-radius: .2rem;
+  width: 50rem;
+  padding: 3rem;
+  p {
+    width: 40%;
+    background-color: base.$color-black;
+    padding: .5rem 2rem;
+    color: base.$color-red;
+    font-family: base.$title;
+    text-align: center;
+    border-radius: .4rem;
+    margin: 6rem 0 2rem 0;
+    display: inline-block;
+  }
+  h3 {
+    font-size: 4rem;
+    width: 95%;
+    font-family: base.$title;
+    padding-bottom: 2rem;
+  }
+  .price__check {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid base.$color-gray;
+    h4 {
+      font-family: base.$title;
+    }
+    span {
+      color: base.$color-red;
+    }
+  }
+}
+
+// TIME
+.time__flex {
+  display: flex;
+}
+.time__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: base.$nav-color;
+  border-radius: .2rem;
+  width: 50rem;
+  padding: 3rem;
+  p {
+    width: 40%;
+    background-color: base.$color-black;
+    padding: .5rem 2rem;
+    color: base.$color-red;
+    font-family: base.$title;
+    text-align: center;
+    border-radius: .4rem;
+    margin: 6rem 0 2rem 0;
+    display: inline-block;
+  }
+  h3 {
+    font-size: 4rem;
+    width: 95%;
+    font-family: base.$title;
+    padding-bottom: 2rem;
+  }
+  .time__check {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid base.$color-gray;
+    h4 {
+      font-family: base.$title;
+    }
+    span {
+      color: base.$color-red;
+    }
+  }
+}
+
+// TESTIMONIAL
+.testimonial {
+  padding: 6rem 0;
+  text-align: center;
+  span {
+    background-color: base.$nav-color;
+    padding: .5rem 2rem;
+    color: base.$color-red;
+    font-family: base.$title;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  h3 {
+    font-size: 4rem;
+    font-family: base.$title;
+  }
+  .testimonial__flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+  h4 {
+    font-size: 2rem;
+    font-family: base.$title;
+    padding-bottom: 2rem;
+  }
+  p {
+    color: base.$color-gray;
+    line-height: 2.2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+}
+
+// FOOTER
+footer {
+  background-color: base.$color-gray;
+  p {
+    text-align: center;
+    color: base.$color-white;
+  }
+  a {
+    color: base.$color-white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

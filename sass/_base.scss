@@ -1,0 +1,30 @@
+$color-red: #eb1616;
+$nav-color: #191C24;
+$color-gray: #6C7293;
+$color-white: #ffffff;
+$color-black: #000000;
+$title: 'Oswald', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background: $color-black;
+  color: $color-white;
+}
+
+img {
+  max-width: 100%;
+}
