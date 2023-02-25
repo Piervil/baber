@@ -343,4 +343,115 @@ footer a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .hero .hero__flex {
+    text-align: center;
+  }
+  .hero .hero__flex h1 {
+    font-size: 2rem;
+  }
+  .hero .hero__flex p {
+    font-size: 1.4rem;
+  }
+  .about {
+    padding: 5rem 0;
+  }
+  .about .about__flex {
+    flex-direction: column;
+  }
+  .about .about__flex img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+  }
+  .about__text {
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .about__text .btn {
+    background-color: #191C24;
+    padding: 0.4rem 2rem;
+  }
+  .about__text h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .about__text p {
+    width: 100%;
+  }
+  .about__text .about__info {
+    flex-direction: column;
+  }
+  .about__text .about__title {
+    font-size: 2.2rem;
+  }
+  .price {
+    padding: 6rem 0;
+  }
+  .price .price__flex {
+    flex-direction: column;
+  }
+  .price__flex {
+    align-items: center;
+  }
+  .price__flex .price__info {
+    flex-direction: column;
+    width: 30rem;
+  }
+  .price__flex .price__info p {
+    width: 50%;
+  }
+  .price__flex .price__info h3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .price__flex .price__image img {
+    width: 30rem;
+  }
+  .time__flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .time__image img {
+    width: 30rem;
+  }
+  .time__info {
+    width: 30rem;
+  }
+  .time__info p {
+    width: 56%;
+  }
+  .time__info h3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .testimonial {
+    padding: 6rem 0;
+    text-align: center;
+  }
+  .testimonial h3 {
+    font-size: 2.9rem;
+  }
+  .testimonial .testimonial__flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial .testimonial__flex .left {
+    flex-direction: column;
+  }
+  .testimonial h4 {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 2rem;
+  }
+  .testimonial p {
+    padding: 0 1rem;
+  }
+  .testimonial img {
+    margin-top: 1.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
